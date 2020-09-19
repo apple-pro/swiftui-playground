@@ -8,9 +8,22 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @State var animationAmount: CGFloat = 1
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        Button("Test") {
+            if animationAmount < 2 {
+                animationAmount += 4
+            } else {
+                animationAmount = 1
+            }
+            
+        }.padding()
+        .background(Color.red)
+        .foregroundColor(.white)
+        .clipShape(/*@START_MENU_TOKEN@*/Circle()/*@END_MENU_TOKEN@*/)
+        .scaleEffect(animationAmount).animation(.default)
     }
 }
 
