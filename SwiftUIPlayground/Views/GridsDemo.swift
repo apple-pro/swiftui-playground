@@ -27,10 +27,12 @@ struct GridsDemo: View {
     ]
     
     var body: some View {
-//        ScrollView {
-//            LazyVGrid(columns: layout, spacing: 20) {
-        ScrollView(.horizontal) {
-            LazyHGrid(rows: layout, spacing: 20) {
+        //vertical
+        ScrollView {
+            LazyVGrid(columns: layout, spacing: 20) {
+        //horizontal
+//      ScrollView(.horizontal) {
+//          LazyHGrid(rows: layout, spacing: 20) {
                 ForEach(data, id: \.self) { item in
                     ZStack {
                         Color.blue
