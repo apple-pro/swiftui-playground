@@ -7,6 +7,8 @@
 
 import SwiftUI
 
+//for ref:
+//https://www.hackingwithswift.com/quick-start/swiftui/how-to-position-views-in-a-grid-using-lazyvgrid-and-lazyhgrid
 struct GridsDemo: View {
     
     let data = Array(1...10000).map { "Item \($0)" }
