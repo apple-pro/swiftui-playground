@@ -7,10 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F019003A2517198F001CAB15 /* AnimationEaseOut.swift in Sources */ = {isa = PBXBuildFile; fileRef = F01900392517198F001CAB15 /* AnimationEaseOut.swift */; };
 		F0F0D3DB2516E27E00CD3F1B /* GridsDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F0D3DA2516E27E00CD3F1B /* GridsDemo.swift */; };
 		F0F0D3DF2516E9C900CD3F1B /* MapsDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F0D3DE2516E9C900CD3F1B /* MapsDemo.swift */; };
 		F0F0D3E22516EC8700CD3F1B /* TabDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F0D3E12516EC8700CD3F1B /* TabDemo.swift */; };
-		F0F0D3E52516EF7800CD3F1B /* SidebarDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F0D3E42516EF7800CD3F1B /* SidebarDemo.swift */; };
+		F0F0D3E52516EF7800CD3F1B /* MainNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F0D3E42516EF7800CD3F1B /* MainNavigation.swift */; };
 		F0FB935525134BB400948A5F /* SwiftUIPlaygroundApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0FB935425134BB400948A5F /* SwiftUIPlaygroundApp.swift */; };
 		F0FB935725134BB400948A5F /* SimpleAnimationDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0FB935625134BB400948A5F /* SimpleAnimationDemo.swift */; };
 		F0FB935925134BB600948A5F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0FB935825134BB600948A5F /* Assets.xcassets */; };
@@ -18,10 +19,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F01900392517198F001CAB15 /* AnimationEaseOut.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationEaseOut.swift; sourceTree = "<group>"; };
 		F0F0D3DA2516E27E00CD3F1B /* GridsDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridsDemo.swift; sourceTree = "<group>"; };
 		F0F0D3DE2516E9C900CD3F1B /* MapsDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapsDemo.swift; sourceTree = "<group>"; };
 		F0F0D3E12516EC8700CD3F1B /* TabDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabDemo.swift; sourceTree = "<group>"; };
-		F0F0D3E42516EF7800CD3F1B /* SidebarDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SidebarDemo.swift; sourceTree = "<group>"; };
+		F0F0D3E42516EF7800CD3F1B /* MainNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNavigation.swift; sourceTree = "<group>"; };
 		F0FB935125134BB400948A5F /* SwiftUIPlayground.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIPlayground.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0FB935425134BB400948A5F /* SwiftUIPlaygroundApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIPlaygroundApp.swift; sourceTree = "<group>"; };
 		F0FB935625134BB400948A5F /* SimpleAnimationDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleAnimationDemo.swift; sourceTree = "<group>"; };
@@ -48,7 +50,7 @@
 				F0F0D3DE2516E9C900CD3F1B /* MapsDemo.swift */,
 				F0FB935625134BB400948A5F /* SimpleAnimationDemo.swift */,
 				F0F0D3E12516EC8700CD3F1B /* TabDemo.swift */,
-				F0F0D3E42516EF7800CD3F1B /* SidebarDemo.swift */,
+				F01900392517198F001CAB15 /* AnimationEaseOut.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -72,8 +74,9 @@
 		F0FB935325134BB400948A5F /* SwiftUIPlayground */ = {
 			isa = PBXGroup;
 			children = (
-				F0F0D3D92516E24D00CD3F1B /* Views */,
 				F0FB935425134BB400948A5F /* SwiftUIPlaygroundApp.swift */,
+				F0F0D3E42516EF7800CD3F1B /* MainNavigation.swift */,
+				F0F0D3D92516E24D00CD3F1B /* Views */,
 				F0FB935825134BB600948A5F /* Assets.xcassets */,
 				F0FB935D25134BB600948A5F /* Info.plist */,
 				F0FB935A25134BB600948A5F /* Preview Content */,
@@ -163,7 +166,8 @@
 				F0F0D3E22516EC8700CD3F1B /* TabDemo.swift in Sources */,
 				F0F0D3DB2516E27E00CD3F1B /* GridsDemo.swift in Sources */,
 				F0F0D3DF2516E9C900CD3F1B /* MapsDemo.swift in Sources */,
-				F0F0D3E52516EF7800CD3F1B /* SidebarDemo.swift in Sources */,
+				F0F0D3E52516EF7800CD3F1B /* MainNavigation.swift in Sources */,
+				F019003A2517198F001CAB15 /* AnimationEaseOut.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -53,6 +53,23 @@ struct SideBarView: View {
                 })
             }
             
+            Section(header: Text("Layouts")) {
+                NavigationLink(
+                    destination: SimpleAnimationDemo(),
+                    label: { NavItem("Z Stack", "square.stack.3d.down.right.fill")}
+                )
+                
+                NavigationLink(
+                    destination: SimpleAnimationDemo(),
+                    label: { NavItem("Vertical Stack", "square.stack.fill")}
+                )
+                
+                NavigationLink(
+                    destination: AnimationEaseOut(),
+                    label: { NavItem("Horizontal Stack", "square.stack")}
+                )
+            }
+            
         }.listStyle(SidebarListStyle())
     }
 }
@@ -64,22 +81,35 @@ struct PrimaryView: View {
             NavigationLink(
                 destination: MapsDemo(),
                 label: {
-                    HStack {
-                        Image(systemName: "map.fill")
-                        Text("Maps")
-                    }
-                    
+                        NavItem("Maps", "map.fill")
                 }
             )
             
             NavigationLink(
                 destination: GridsDemo(),
                 label: {
-                    Image(systemName: "square.grid.4x3.fill")
-                    Text("Grids")
+                    NavItem("Grids", "square.grid.4x3.fill")
                 }
             )
             
+        }
+    }
+}
+
+struct NavItem: View {
+    
+    let title: String?
+    let image: String?
+    
+    init(_ title: String?, _ image: String?) {
+        self.title = title
+        self.image = image
+    }
+    
+    var body: some View {
+        HStack {
+            Image(systemName: image ?? "questionmark.circle")
+            Text(title ?? "Unknown")
         }
     }
 }
