@@ -10,8 +10,12 @@ import SwiftUI
 struct SidebarDemo: View {
     var body: some View {
         NavigationView {
-            SideBarView().navigationBarTitle("Sidebar")
-            PrimaryView().navigationBarTitle("Primary Nav")
+            SideBarView()
+                .navigationBarTitle("Sidebar")
+                .navigationBarItems(trailing: Button("Edit") {
+                
+                })
+            PrimaryView().navigationBarTitle("Primary Content")
             GridsDemo()
         }
     }
@@ -19,8 +23,36 @@ struct SidebarDemo: View {
 
 struct SideBarView: View {
     var body: some View {
-        List(1..<100) { i in
-            Text("S\(i)")
+        List {
+            NavigationLink(
+                destination: PrimaryView(),
+                label: {
+                    HStack {
+                        Image(systemName: "star")
+                        Text("Favorites")
+                    }
+            })
+            
+            Section(header: Text("Animations")) {
+                NavigationLink(
+                    destination: SimpleAnimationDemo(),
+                    label: {
+                        HStack {
+                            Image(systemName: "ant.circle")
+                            Text("Grow and Shrink")
+                        }
+                })
+                
+                NavigationLink(
+                    destination: SimpleAnimationDemo(),
+                    label: {
+                        HStack {
+                            Image(systemName: "flame")
+                            Text("Crash and Burn")
+                        }
+                })
+            }
+            
         }.listStyle(SidebarListStyle())
     }
 }
@@ -28,8 +60,26 @@ struct SideBarView: View {
 struct PrimaryView: View {
     var body: some View {
         
-        List(1..<100) { i in
-            Text("S\(i)")
+        List {
+            NavigationLink(
+                destination: MapsDemo(),
+                label: {
+                    HStack {
+                        Image(systemName: "map.fill")
+                        Text("Maps")
+                    }
+                    
+                }
+            )
+            
+            NavigationLink(
+                destination: GridsDemo(),
+                label: {
+                    Image(systemName: "square.grid.4x3.fill")
+                    Text("Grids")
+                }
+            )
+            
         }
     }
 }
