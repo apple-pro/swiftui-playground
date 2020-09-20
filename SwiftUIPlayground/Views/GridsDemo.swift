@@ -13,13 +13,30 @@ struct GridsDemo: View {
     
     let layout = [
         GridItem(.adaptive(minimum: 80))
+        
+        //3 columns:
+//        GridItem(.flexible()),
+//        GridItem(.flexible()),
+//        GridItem(.flexible())
+        
+        //2 columns:
+//        GridItem(.adaptive(minimum: 80)),
+//        GridItem(.flexible())
     ]
     
     var body: some View {
         ScrollView {
             LazyVGrid(columns: layout, spacing: 20) {
                 ForEach(data, id: \.self) { item in
-                    Text(item)
+                    ZStack {
+                        Color.blue
+                        Text(item)
+                            .foregroundColor(.white)
+                            .padding(.horizontal)
+                    }
+                    .padding()
+                    .background(Color.green)
+                    .clipShape(Capsule())
                 }
             }
             .padding(.horizontal)
