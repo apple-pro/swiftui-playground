@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct SimpleAnimationDemo: View {
     
     @State var animationAmount: CGFloat = 1
     
@@ -29,6 +29,6 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        SimpleAnimationDemo()
     }
 }

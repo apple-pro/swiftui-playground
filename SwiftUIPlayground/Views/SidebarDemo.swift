@@ -10,8 +10,8 @@ import SwiftUI
 struct SidebarDemo: View {
     var body: some View {
         NavigationView {
-            SideBarView()
-            PrimaryView()
+            SideBarView().navigationBarTitle("Sidebar")
+            PrimaryView().navigationBarTitle("Primary Nav")
             GridsDemo()
         }
     }
@@ -27,6 +27,7 @@ struct SideBarView: View {
 
 struct PrimaryView: View {
     var body: some View {
+        
         List(1..<100) { i in
             Text("S\(i)")
         }
