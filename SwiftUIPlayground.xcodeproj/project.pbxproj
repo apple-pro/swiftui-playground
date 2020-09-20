@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F0F0D3DB2516E27E00CD3F1B /* GridsDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F0D3DA2516E27E00CD3F1B /* GridsDemo.swift */; };
 		F0FB935525134BB400948A5F /* SwiftUIPlaygroundApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0FB935425134BB400948A5F /* SwiftUIPlaygroundApp.swift */; };
 		F0FB935725134BB400948A5F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0FB935625134BB400948A5F /* ContentView.swift */; };
 		F0FB935925134BB600948A5F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0FB935825134BB600948A5F /* Assets.xcassets */; };
@@ -14,6 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F0F0D3DA2516E27E00CD3F1B /* GridsDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridsDemo.swift; sourceTree = "<group>"; };
 		F0FB935125134BB400948A5F /* SwiftUIPlayground.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIPlayground.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0FB935425134BB400948A5F /* SwiftUIPlaygroundApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIPlaygroundApp.swift; sourceTree = "<group>"; };
 		F0FB935625134BB400948A5F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -33,6 +35,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F0F0D3D92516E24D00CD3F1B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F0F0D3DA2516E27E00CD3F1B /* GridsDemo.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		F0FB934825134BB400948A5F = {
 			isa = PBXGroup;
 			children = (
@@ -52,6 +62,7 @@
 		F0FB935325134BB400948A5F /* SwiftUIPlayground */ = {
 			isa = PBXGroup;
 			children = (
+				F0F0D3D92516E24D00CD3F1B /* Views */,
 				F0FB935425134BB400948A5F /* SwiftUIPlaygroundApp.swift */,
 				F0FB935625134BB400948A5F /* ContentView.swift */,
 				F0FB935825134BB600948A5F /* Assets.xcassets */,
@@ -140,6 +151,7 @@
 			files = (
 				F0FB935725134BB400948A5F /* ContentView.swift in Sources */,
 				F0FB935525134BB400948A5F /* SwiftUIPlaygroundApp.swift in Sources */,
+				F0F0D3DB2516E27E00CD3F1B /* GridsDemo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
