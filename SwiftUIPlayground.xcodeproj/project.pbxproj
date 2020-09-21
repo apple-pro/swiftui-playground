@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F011DA6F2518D06300A66EAF /* GeometryEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = F011DA6E2518D06300A66EAF /* GeometryEffect.swift */; };
 		F019003A2517198F001CAB15 /* AnimationEaseOut.swift in Sources */ = {isa = PBXBuildFile; fileRef = F01900392517198F001CAB15 /* AnimationEaseOut.swift */; };
 		F0F0D3DB2516E27E00CD3F1B /* GridsDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F0D3DA2516E27E00CD3F1B /* GridsDemo.swift */; };
 		F0F0D3DF2516E9C900CD3F1B /* MapsDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F0D3DE2516E9C900CD3F1B /* MapsDemo.swift */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F011DA6E2518D06300A66EAF /* GeometryEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeometryEffect.swift; sourceTree = "<group>"; };
 		F01900392517198F001CAB15 /* AnimationEaseOut.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationEaseOut.swift; sourceTree = "<group>"; };
 		F0F0D3DA2516E27E00CD3F1B /* GridsDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridsDemo.swift; sourceTree = "<group>"; };
 		F0F0D3DE2516E9C900CD3F1B /* MapsDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapsDemo.swift; sourceTree = "<group>"; };
@@ -51,6 +53,7 @@
 				F0FB935625134BB400948A5F /* SimpleAnimationDemo.swift */,
 				F0F0D3E12516EC8700CD3F1B /* TabDemo.swift */,
 				F01900392517198F001CAB15 /* AnimationEaseOut.swift */,
+				F011DA6E2518D06300A66EAF /* GeometryEffect.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -161,6 +164,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F011DA6F2518D06300A66EAF /* GeometryEffect.swift in Sources */,
 				F0FB935725134BB400948A5F /* SimpleAnimationDemo.swift in Sources */,
 				F0FB935525134BB400948A5F /* SwiftUIPlaygroundApp.swift in Sources */,
 				F0F0D3E22516EC8700CD3F1B /* TabDemo.swift in Sources */,

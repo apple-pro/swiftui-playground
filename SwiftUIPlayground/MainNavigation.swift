@@ -44,6 +44,11 @@ struct SideBarView: View {
                 })
                 
                 NavigationLink(
+                    destination: GeometryEffect(),
+                    label: { NavItem("Geometry Effect", "square.stack")}
+                )
+                
+                NavigationLink(
                     destination: AnimationEaseOut(),
                     label: {
                         HStack {
@@ -68,6 +73,7 @@ struct SideBarView: View {
                     destination: AnimationEaseOut(),
                     label: { NavItem("Horizontal Stack", "square.stack")}
                 )
+                
             }
             
         }.listStyle(SidebarListStyle())
