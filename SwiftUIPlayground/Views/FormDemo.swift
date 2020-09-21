@@ -15,6 +15,7 @@ struct FormDemo: View {
     @State var username = ""
     @State var password = ""
     @State var favoritePokemon = ""
+    @State var numberOfFriends = 1
     @State var birthday = Date()
     
     var body: some View {
@@ -37,6 +38,8 @@ struct FormDemo: View {
                 DatePicker(selection: $birthday, in: ...Date(), displayedComponents: .date) {
                     Text("Birthday")
                 }
+                
+                Stepper("Friends (\(numberOfFriends))", value: $numberOfFriends, in: 1...10)
             }
             
             Section(header: Text("Account")) {
