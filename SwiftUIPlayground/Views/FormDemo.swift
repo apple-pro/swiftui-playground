@@ -45,7 +45,7 @@ struct FormDemo: View {
             Section(header: Text("Account")) {
                 
                 TextField("Username", text: $username)
-                TextField("Password", text: $password)
+                SecureField("Password", text: $password)
             }
             
             Section(header: Text("About")) {
