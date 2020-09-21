@@ -16,7 +16,7 @@ struct MainNavigation: View {
                 
                 })
             PrimaryView().navigationBarTitle("Primary Content")
-            GridsDemo()
+            GeometryEffect()
         }
     }
 }
@@ -45,7 +45,7 @@ struct SideBarView: View {
                 
                 NavigationLink(
                     destination: GeometryEffect(),
-                    label: { NavItem("Geometry Effect", "square.stack")}
+                    label: { NavItem("Geometry Effect", "wand.and.rays")}
                 )
                 
                 NavigationLink(
