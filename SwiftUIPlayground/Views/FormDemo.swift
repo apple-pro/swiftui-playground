@@ -10,6 +10,7 @@ import SwiftUI
 struct FormDemo: View {
     
     @State var isMale = false
+    @State var showPassword = false
     @State var firstName = ""
     @State var lastName = ""
     @State var username = ""
@@ -45,7 +46,20 @@ struct FormDemo: View {
             Section(header: Text("Account")) {
                 
                 TextField("Username", text: $username)
-                SecureField("Password", text: $password)
+                
+                HStack {
+                    if showPassword {
+                        TextField("Password", text: $password)
+                    } else {
+                        SecureField("Password", text: $password)
+                    }
+                    
+                    Button(action: {
+                        showPassword.toggle()
+                    }) {
+                        Image(systemName: "eye")
+                    }
+                }
             }
             
             Section(header: Text("About")) {
@@ -63,6 +77,7 @@ struct FormDemo: View {
                 }
             }
         }
+        .accentColor(.orange)
         .navigationBarTitle("Form Demo")
         .navigationBarItems(trailing: Button("") {
             print("Form Button!")
