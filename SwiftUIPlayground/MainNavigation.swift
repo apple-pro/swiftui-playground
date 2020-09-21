@@ -16,7 +16,7 @@ struct MainNavigation: View {
                 
                 })
             PrimaryView().navigationBarTitle("Primary Content")
-            GeometryEffect()
+            FormDemo()
         }.accentColor(.green) //adjusting the accent color for the entire view:
         //https://www.hackingwithswift.com/quick-start/swiftui/how-to-adjust-the-accent-color-of-a-view
     }
@@ -60,6 +60,11 @@ struct SideBarView: View {
             }
             
             Section(header: Text("Layouts")) {
+                NavigationLink(
+                    destination: FormDemo(),
+                    label: { NavItem("Form", "square.and.pencil")}
+                )
+                
                 NavigationLink(
                     destination: SimpleAnimationDemo(),
                     label: { NavItem("Z Stack", "square.stack.3d.down.right.fill")}
