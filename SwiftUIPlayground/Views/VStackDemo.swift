@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-extension HorizontalAlignment: Hashable {
+extension Alignment: Hashable {
     
     public func hash(into hasher: inout Hasher) {
         hasher.combine(1)
@@ -16,32 +16,48 @@ extension HorizontalAlignment: Hashable {
 
 struct VStackDemo: View {
     
-    @State var alignment: HorizontalAlignment = .trailing
+    @State var alignment: Alignment = .center
     
     var body: some View {
         VStack {
-            VStack(alignment: alignment) {
+            VStack {
                 Circle()
                     .frame(width: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, height: 100)
                     .foregroundColor(.red)
                 
                 Circle()
                     .frame(width: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, height: 100)
+                    .foregroundColor(.green)
+                
+                Circle()
+                    .frame(width: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, height: 100)
                     .foregroundColor(.blue)
             }
-            .frame(width: 1000, height: 1000)
+            .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity, alignment: alignment)
             .background(Color.gray)
             
+            Picker("", selection: $alignment) {
+                Text("Top Leading").tag(Alignment.topLeading)
+                Text("Center").tag(Alignment.top)
+                Text("Top Trailing").tag(Alignment.topTrailing)
+            }
+            .pickerStyle(SegmentedPickerStyle())
             
-            Text("Is Center? \(alignment == .center ? "Yes" : "No")")
+            Picker("", selection: $alignment) {
+                Text("Leading").tag(Alignment.leading)
+                Text("Center").tag(Alignment.center)
+                Text("Trailing").tag(Alignment.trailing)
+            }
+            .pickerStyle(SegmentedPickerStyle())
             
-            Picker("Gender Identity", selection: $alignment) {
-                Text("Trailing").tag(HorizontalAlignment.trailing)
-                Text("Center").tag(HorizontalAlignment.center)
-                Text("Leading").tag(HorizontalAlignment.leading)
+            Picker("", selection: $alignment) {
+                Text("Bot Leading").tag(Alignment.bottomLeading)
+                Text("Center").tag(Alignment.bottom)
+                Text("Bot Trailing").tag(Alignment.bottomTrailing)
             }
             .pickerStyle(SegmentedPickerStyle())
         }
+        .padding()
     }
     
 }
