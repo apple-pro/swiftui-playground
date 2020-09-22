@@ -16,6 +16,7 @@ extension Alignment: Hashable {
 
 struct VStackDemo: View {
     
+    @Namespace var animation
     @State var alignment: Alignment = .center
     
     var body: some View {
@@ -24,17 +25,21 @@ struct VStackDemo: View {
                 Circle()
                     .frame(width: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, height: 100)
                     .foregroundColor(.red)
+                    .matchedGeometryEffect(id: "red", in: animation)
                 
                 Circle()
                     .frame(width: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, height: 100)
                     .foregroundColor(.green)
+                    .matchedGeometryEffect(id: "green", in: animation)
                 
                 Circle()
                     .frame(width: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, height: 100)
                     .foregroundColor(.blue)
+                    .matchedGeometryEffect(id: "blue", in: animation)
             }
             .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity, alignment: alignment)
             .background(Color.gray)
+            .animation(.default)
             
             Picker("", selection: $alignment) {
                 Text("Top Leading").tag(Alignment.topLeading)
