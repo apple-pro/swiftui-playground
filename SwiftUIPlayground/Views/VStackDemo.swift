@@ -21,12 +21,19 @@ struct VStackDemo: View {
     var body: some View {
         VStack {
             VStack(alignment: alignment) {
-                Circle().foregroundColor(.red).frame(width: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, height: 100)
-                Circle().foregroundColor(.blue).frame(width: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, height: 100)
+                Circle()
+                    .frame(width: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, height: 100)
+                    .foregroundColor(.red)
+                
+                Circle()
+                    .frame(width: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, height: 100)
+                    .foregroundColor(.blue)
             }
             .frame(width: 1000, height: 1000)
             .background(Color.gray)
             
+            
+            Text("Is Center? \(alignment == .center ? "Yes" : "No")")
             
             Picker("Gender Identity", selection: $alignment) {
                 Text("Trailing").tag(HorizontalAlignment.trailing)
@@ -35,18 +42,6 @@ struct VStackDemo: View {
             }
             .pickerStyle(SegmentedPickerStyle())
         }
-    }
-    
-    func alignment(value: Int) -> HorizontalAlignment {
-        switch value {
-        case 1:
-            return .leading
-        case 2:
-            return .trailing
-        default:
-            return .center
-        }
-        
     }
     
 }
