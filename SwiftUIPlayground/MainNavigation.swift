@@ -16,8 +16,8 @@ struct MainNavigation: View {
                 
                 })
             PrimaryView().navigationBarTitle("Primary Content")
-            GradientDemo()
-        }.accentColor(.green) //adjusting the accent color for the entire view:
+            ButtonsDemo()
+        }.accentColor(Color("AccentColor")) //adjusting the accent color for the entire view:
         //https://www.hackingwithswift.com/quick-start/swiftui/how-to-adjust-the-accent-color-of-a-view
     }
 }
@@ -86,6 +86,16 @@ struct SideBarView: View {
                 NavigationLink(
                     destination: GradientDemo(),
                     label: { NavItem("Gradient", "eyedropper")}
+                )
+            }
+            
+            Section(header: HStack {
+                Image(systemName: "person")
+                Text("User Interaction")
+            }) {
+                NavigationLink(
+                    destination: ButtonsDemo(),
+                    label: { NavItem("Button", "delete.right.fill")}
                 )
             }
             
