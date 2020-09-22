@@ -10,14 +10,17 @@ import SwiftUI
 struct FormDemo: View {
     
     @State var isMale = false
+    @State var attractedToMen = false
+    @State var attractedToWomen = false
     @State var showPassword = false
     @State var firstName = ""
     @State var lastName = ""
     @State var username = ""
     @State var password = ""
-    @State var favoritePokemon = ""
+    @State var favoritePokemon = "Pikachu"
     @State var numberOfFriends = 1
     @State var birthday = Date()
+    @State var genderOrientation = "Male"
     
     var body: some View {
         Form {
@@ -26,14 +29,32 @@ struct FormDemo: View {
                 TextField("Last Name", text: $lastName)
                 
                 Picker(selection: $favoritePokemon, label: Text("Favorite Pokemon")) {
-                    Text("Pikachu")
-                    Text("Squirtle")
-                    Text("Charmander")
-                    Text("Bulbasaur")
+                    TextPickerItem("Pikachu")
+                    TextPickerItem("Squirtle")
+                    TextPickerItem("Charmander")
+                    TextPickerItem("Bulbasaur")
                 }
                 
-                Toggle(isOn: $isMale) {
-                    Text(isMale ? "Male" : "Female")
+                Picker("Gender Identity", selection: $genderOrientation) {
+                    TextPickerItem("Male")
+                    TextPickerItem("Female")
+                    TextPickerItem("Others")
+                }
+                .pickerStyle(SegmentedPickerStyle())
+                
+                if (genderOrientation == "Others") {
+                    
+                    Toggle(isOn: $isMale) {
+                        Text("Biological \(isMale ? "Male" : "Female")")
+                    }
+                    
+                    Toggle(isOn: $attractedToMen) {
+                        Text("Are you attracted to men?")
+                    }
+                    
+                    Toggle(isOn: $attractedToWomen) {
+                        Text("Are you attracted to women?")
+                    }
                 }
                 
                 DatePicker(selection: $birthday, in: ...Date(), displayedComponents: .date) {
@@ -42,6 +63,7 @@ struct FormDemo: View {
                 
                 Stepper("Friends (\(numberOfFriends))", value: $numberOfFriends, in: 1...10)
             }
+            
             
             Section(header: Text("Account")) {
                 
@@ -82,6 +104,18 @@ struct FormDemo: View {
         .navigationBarItems(trailing: Button("") {
             print("Form Button!")
         })
+    }
+}
+
+struct TextPickerItem: View {
+    let label: String
+    
+    init(_ label: String) {
+        self.label = label
+    }
+    
+    var body: some View {
+        Text(label).tag(label)
     }
 }
 
