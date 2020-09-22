@@ -22,6 +22,7 @@ struct VStackDemo: View {
     var body: some View {
         VStack {
             VStack {
+                
                 Circle()
                     .frame(width: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, height: 100)
                     .foregroundColor(.red)

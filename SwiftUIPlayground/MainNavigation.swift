@@ -16,7 +16,7 @@ struct MainNavigation: View {
                 
                 })
             PrimaryView().navigationBarTitle("Primary Content")
-            VStackDemo()
+            GradientDemo()
         }.accentColor(.green) //adjusting the accent color for the entire view:
         //https://www.hackingwithswift.com/quick-start/swiftui/how-to-adjust-the-accent-color-of-a-view
     }
@@ -82,6 +82,13 @@ struct SideBarView: View {
                 
             }
             
+            Section(header: Text("Colors")) {
+                NavigationLink(
+                    destination: GradientDemo(),
+                    label: { NavItem("Gradient", "eyedropper")}
+                )
+            }
+            
         }.listStyle(SidebarListStyle())
     }
 }
@@ -128,6 +135,13 @@ struct NavItem: View {
 
 struct SidebarDemo_Previews: PreviewProvider {
     static var previews: some View {
-        MainNavigation()
+        Group {
+            MainNavigation()
+                .preferredColorScheme(.dark)
+                .previewDevice("iPad Air (4th generation)")
+            MainNavigation()
+                .preferredColorScheme(.light)
+                .previewDevice("iPhone 11")
+        }
     }
 }
