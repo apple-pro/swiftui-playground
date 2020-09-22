@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F00393FD251989BD006B4300 /* VStackDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00393FC251989BD006B4300 /* VStackDemo.swift */; };
 		F011DA6F2518D06300A66EAF /* GeometryEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = F011DA6E2518D06300A66EAF /* GeometryEffect.swift */; };
 		F011DA722518DE4200A66EAF /* FormDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F011DA712518DE4200A66EAF /* FormDemo.swift */; };
 		F019003A2517198F001CAB15 /* AnimationEaseOut.swift in Sources */ = {isa = PBXBuildFile; fileRef = F01900392517198F001CAB15 /* AnimationEaseOut.swift */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F00393FC251989BD006B4300 /* VStackDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VStackDemo.swift; sourceTree = "<group>"; };
 		F011DA6E2518D06300A66EAF /* GeometryEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeometryEffect.swift; sourceTree = "<group>"; };
 		F011DA712518DE4200A66EAF /* FormDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormDemo.swift; sourceTree = "<group>"; };
 		F01900392517198F001CAB15 /* AnimationEaseOut.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationEaseOut.swift; sourceTree = "<group>"; };
@@ -57,6 +59,7 @@
 				F01900392517198F001CAB15 /* AnimationEaseOut.swift */,
 				F011DA6E2518D06300A66EAF /* GeometryEffect.swift */,
 				F011DA712518DE4200A66EAF /* FormDemo.swift */,
+				F00393FC251989BD006B4300 /* VStackDemo.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -167,6 +170,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F00393FD251989BD006B4300 /* VStackDemo.swift in Sources */,
 				F011DA6F2518D06300A66EAF /* GeometryEffect.swift in Sources */,
 				F011DA722518DE4200A66EAF /* FormDemo.swift in Sources */,
 				F0FB935725134BB400948A5F /* SimpleAnimationDemo.swift in Sources */,
