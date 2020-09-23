@@ -81,7 +81,7 @@ struct ComplexDynamicList: View {
                 Text("\(human.name)").font(.title)
                 Text("\(human.job)").font(.caption)
             }
-        }
+        }.listStyle(InsetGroupedListStyle())
     }
 }
 
