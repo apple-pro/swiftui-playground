@@ -66,8 +66,8 @@ struct SideBarView: View {
                 )
                 
                 NavigationLink(
-                    destination: SimpleAnimationDemo(),
-                    label: { NavItem("Z Stack", "square.stack.3d.down.right.fill")}
+                    destination: ListDemo(),
+                    label: { NavItem("Lists", "list.number")}
                 )
                 
                 NavigationLink(
