@@ -11,7 +11,7 @@ import SwiftUI
 //https://www.hackingwithswift.com/books/ios-swiftui/introducing-list-your-best-friend
 struct ListDemo: View {
     
-    @State var listType = 0
+    @State var listType = 2
     
     var body: some View {
         VStack {
@@ -20,6 +20,8 @@ struct ListDemo: View {
                 BasicList()
             } else if (listType == 1) {
                 SimpleDynamicList()
+            } else if (listType == 2) {
+                GroupedComplexDynamicList()
             } else {
                 ComplexDynamicList()
             }
@@ -27,6 +29,7 @@ struct ListDemo: View {
             Picker("Gender Identity", selection: $listType) {
                 Text("Basic").tag(0)
                 Text("Dynamic").tag(1)
+                Text("Grouped").tag(2)
                 Text("Struct").tag(2)
             }
             .pickerStyle(SegmentedPickerStyle())
@@ -65,8 +68,55 @@ struct ComplexDynamicList: View {
     ]
     
     var body: some View {
-        List(humans, id: \.name) {
-            Text("\($0.name): \($0.job)")
+        List(humans, id: \.name) { human in
+            Image(systemName: "pencil")
+            VStack {
+                Text("\(human.name)").font(.title)
+                Text("\(human.job)").font(.caption)
+            }
+        }
+    }
+}
+
+struct GroupedComplexDynamicList: View {
+    
+    var stregas = [
+        Human("Julis Reissfeld", "Swordsman"),
+        Human("Katie Uniacke", "Gunner"),
+        Human("Haruka Amagiri", "Swordsman")
+    ]
+    
+    var dantes = [
+        Human("Cedric Gunnell", "Swordsman"),
+        Human("Silas Norman", "Gunner"),
+        Human("Wernher", "Swordsman")
+    ]
+    
+    var body: some View {
+        List {
+            Section(header: Text("Stregas"), footer: Text("Female Genestella")) {
+                ForEach(stregas, id: \.name) { human in
+                    HStack {
+                        Image(systemName: "person")
+                        VStack {
+                            Text("\(human.name)").font(.title)
+                            Text("\(human.job)").font(.caption)
+                        }
+                    }
+                }
+            }
+            
+            Section(header: Text("Dantes"), footer: Text("Male Genestella")) {
+                ForEach(dantes, id: \.name) { human in
+                    HStack {
+                        Image(systemName: "person.fill")
+                        VStack {
+                            Text("\(human.name)").font(.title)
+                            Text("\(human.job)").font(.caption)
+                        }
+                    }
+                }
+            }
         }
     }
 }
