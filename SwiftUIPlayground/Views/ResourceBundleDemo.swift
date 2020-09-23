@@ -8,8 +8,33 @@
 import SwiftUI
 
 struct ResourceBundleDemo: View {
+    
+    private var commonPasswords = [String]()
+    
+    @State private var password: String = ""
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            List {
+                Text("Test")
+                Text("Test")
+                Text("Test")
+            }.listStyle(InsetListStyle())
+            
+            TextField("Your password...", text: $password)
+                .frame(maxWidth: 300)
+                .background(Color.gray.opacity(0.5))
+                .foregroundColor(.white)
+            
+            
+        }
+        .padding()
+        .background(Color.orange)
+        .onAppear(perform: loadDataFromBundle)
+    }
+    
+    func loadDataFromBundle() {
+        
     }
 }
 
