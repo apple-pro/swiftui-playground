@@ -11,7 +11,7 @@ import SwiftUI
 //https://www.hackingwithswift.com/books/ios-swiftui/introducing-list-your-best-friend
 struct ListDemo: View {
     
-    @State var listType = 2
+    @State var listType = 100
     
     var body: some View {
         VStack {
@@ -22,6 +22,8 @@ struct ListDemo: View {
                 SimpleDynamicList()
             } else if (listType == 2) {
                 GroupedComplexDynamicList()
+            } else if (listType == 3) {
+                ListWithChild()
             } else {
                 ComplexDynamicList()
             }
@@ -30,10 +32,11 @@ struct ListDemo: View {
                 Text("Basic").tag(0)
                 Text("Dynamic").tag(1)
                 Text("Grouped").tag(2)
-                Text("Struct").tag(4)
+                Text("Children").tag(3)
+                Text("Struct").tag(100)
             }
             .pickerStyle(SegmentedPickerStyle())
-        }
+        }.navigationBarTitle("Lists are Awesome").padding()
     }
 }
 
@@ -51,6 +54,35 @@ struct BasicList: View {
                 Text("Simple Loop: \($0)")
                     .listRowBackground(Color.pink.opacity(0.5))
             }
+        }
+    }
+}
+
+struct Bookmark: Identifiable {
+    let id = UUID()
+    let name: String
+    let icon: String
+    var items: [Bookmark]?
+
+    // some example websites
+    static let apple = Bookmark(name: "Apple", icon: "1.circle")
+    static let bbc = Bookmark(name: "BBC", icon: "square.and.pencil")
+    static let swift = Bookmark(name: "Swift", icon: "bolt.fill")
+    static let twitter = Bookmark(name: "Twitter", icon: "mic")
+
+    // some example groups
+    static let example1 = Bookmark(name: "Favorites", icon: "star", items: [Bookmark.apple, Bookmark.bbc, Bookmark.swift, Bookmark.twitter])
+    static let example2 = Bookmark(name: "Recent", icon: "timer", items: [Bookmark.apple, Bookmark.bbc, Bookmark.swift, Bookmark.twitter])
+    static let example3 = Bookmark(name: "Recommended", icon: "hand.thumbsup", items: [Bookmark.apple, Bookmark.bbc, Bookmark.swift, Bookmark.twitter])
+}
+
+struct ListWithChild: View {
+    let items: [Bookmark] = [.example1, .example2, .example3]
+
+    var body: some View {
+        List(items, children: \.items) { row in
+            Image(systemName: row.icon)
+            Text(row.name)
         }
     }
 }
