@@ -30,7 +30,7 @@ struct ListDemo: View {
                 Text("Basic").tag(0)
                 Text("Dynamic").tag(1)
                 Text("Grouped").tag(2)
-                Text("Struct").tag(2)
+                Text("Struct").tag(4)
             }
             .pickerStyle(SegmentedPickerStyle())
         }
@@ -42,8 +42,15 @@ struct BasicList: View {
     var body: some View {
         List {
             Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+                .listRowBackground(Color.blue)
+            
             Text("Hello, World!")
             Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+            
+            ForEach(1..<3) {
+                Text("Simple Loop: \($0)")
+                    .listRowBackground(Color.pink.opacity(0.5))
+            }
         }
     }
 }
