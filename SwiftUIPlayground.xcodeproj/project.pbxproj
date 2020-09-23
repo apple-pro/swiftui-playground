@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		F00393FD251989BD006B4300 /* VStackDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00393FC251989BD006B4300 /* VStackDemo.swift */; };
+		F010BE98251B2812009A152F /* ListDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F010BE97251B2812009A152F /* ListDemo.swift */; };
 		F011DA6F2518D06300A66EAF /* GeometryEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = F011DA6E2518D06300A66EAF /* GeometryEffect.swift */; };
 		F011DA722518DE4200A66EAF /* FormDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F011DA712518DE4200A66EAF /* FormDemo.swift */; };
 		F019003A2517198F001CAB15 /* AnimationEaseOut.swift in Sources */ = {isa = PBXBuildFile; fileRef = F01900392517198F001CAB15 /* AnimationEaseOut.swift */; };
@@ -27,6 +28,7 @@
 
 /* Begin PBXFileReference section */
 		F00393FC251989BD006B4300 /* VStackDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VStackDemo.swift; sourceTree = "<group>"; };
+		F010BE97251B2812009A152F /* ListDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListDemo.swift; sourceTree = "<group>"; };
 		F011DA6E2518D06300A66EAF /* GeometryEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeometryEffect.swift; sourceTree = "<group>"; };
 		F011DA712518DE4200A66EAF /* FormDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormDemo.swift; sourceTree = "<group>"; };
 		F01900392517198F001CAB15 /* AnimationEaseOut.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationEaseOut.swift; sourceTree = "<group>"; };
@@ -72,6 +74,7 @@
 				F0D1D8762519E946002E83EC /* ButtonsDemo.swift */,
 				F0D1D879251A084E002E83EC /* TrimDemo.swift */,
 				F0D1D87C251A09E5002E83EC /* AlertDemo.swift */,
+				F010BE97251B2812009A152F /* ListDemo.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -191,6 +194,7 @@
 				F0FB935725134BB400948A5F /* SimpleAnimationDemo.swift in Sources */,
 				F0FB935525134BB400948A5F /* SwiftUIPlaygroundApp.swift in Sources */,
 				F0F0D3E22516EC8700CD3F1B /* TabDemo.swift in Sources */,
+				F010BE98251B2812009A152F /* ListDemo.swift in Sources */,
 				F0F0D3DB2516E27E00CD3F1B /* GridsDemo.swift in Sources */,
 				F0F0D3DF2516E9C900CD3F1B /* MapsDemo.swift in Sources */,
 				F0F0D3E52516EF7800CD3F1B /* MainNavigation.swift in Sources */,
