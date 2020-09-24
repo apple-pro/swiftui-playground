@@ -15,6 +15,7 @@
 		F0871078251C933700836530 /* ExplicitAnimationDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0871077251C933700836530 /* ExplicitAnimationDemo.swift */; };
 		F087107B251CA91900836530 /* AnimatedGesture.swift in Sources */ = {isa = PBXBuildFile; fileRef = F087107A251CA91900836530 /* AnimatedGesture.swift */; };
 		F087107E251CAD3E00836530 /* TransitionDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F087107D251CAD3E00836530 /* TransitionDemo.swift */; };
+		F0871081251CB86000836530 /* DeleteFromListDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0871080251CB86000836530 /* DeleteFromListDemo.swift */; };
 		F089A82E251C09DB0047A793 /* common-passwords.txt in Resources */ = {isa = PBXBuildFile; fileRef = F089A82D251C09DA0047A793 /* common-passwords.txt */; };
 		F089A831251C09F70047A793 /* ResourceBundleDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F089A830251C09F70047A793 /* ResourceBundleDemo.swift */; };
 		F0D1D8742519E5DD002E83EC /* GradientDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D1D8732519E5DC002E83EC /* GradientDemo.swift */; };
@@ -40,6 +41,7 @@
 		F0871077251C933700836530 /* ExplicitAnimationDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExplicitAnimationDemo.swift; sourceTree = "<group>"; };
 		F087107A251CA91900836530 /* AnimatedGesture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedGesture.swift; sourceTree = "<group>"; };
 		F087107D251CAD3E00836530 /* TransitionDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitionDemo.swift; sourceTree = "<group>"; };
+		F0871080251CB86000836530 /* DeleteFromListDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteFromListDemo.swift; sourceTree = "<group>"; };
 		F089A82D251C09DA0047A793 /* common-passwords.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "common-passwords.txt"; sourceTree = "<group>"; };
 		F089A830251C09F70047A793 /* ResourceBundleDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourceBundleDemo.swift; sourceTree = "<group>"; };
 		F0D1D8732519E5DC002E83EC /* GradientDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientDemo.swift; sourceTree = "<group>"; };
@@ -97,6 +99,7 @@
 				F0871077251C933700836530 /* ExplicitAnimationDemo.swift */,
 				F087107A251CA91900836530 /* AnimatedGesture.swift */,
 				F087107D251CAD3E00836530 /* TransitionDemo.swift */,
+				F0871080251CB86000836530 /* DeleteFromListDemo.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -212,6 +215,7 @@
 				F0871078251C933700836530 /* ExplicitAnimationDemo.swift in Sources */,
 				F00393FD251989BD006B4300 /* VStackDemo.swift in Sources */,
 				F0D1D87A251A084E002E83EC /* TrimDemo.swift in Sources */,
+				F0871081251CB86000836530 /* DeleteFromListDemo.swift in Sources */,
 				F011DA6F2518D06300A66EAF /* GeometryEffect.swift in Sources */,
 				F011DA722518DE4200A66EAF /* FormDemo.swift in Sources */,
 				F0D1D8742519E5DD002E83EC /* GradientDemo.swift in Sources */,

@@ -16,7 +16,7 @@ struct MainNavigation: View {
                 
                 })
             PrimaryView().navigationBarTitle("Primary Content")
-            TransitionDemo()
+            DeleteFromListDemo()
         }.accentColor(Color("AccentColor")) //adjusting the accent color for the entire view:
         //https://www.hackingwithswift.com/quick-start/swiftui/how-to-adjust-the-accent-color-of-a-view
     }
@@ -124,6 +124,11 @@ struct SideBarView: View {
                 NavigationLink(
                     destination: AlertDemo(),
                     label: { NavItem("Alert", "message.fill")}
+                )
+                
+                NavigationLink(
+                    destination: DeleteFromListDemo(),
+                    label: { NavItem("Delete From List", "trash.fill")}
                 )
             }
             
