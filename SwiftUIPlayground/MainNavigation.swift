@@ -16,7 +16,7 @@ struct MainNavigation: View {
                 
                 })
             PrimaryView().navigationBarTitle("Primary Content")
-            ResourceBundleDemo()
+            SimpleAnimationDemo()
         }.accentColor(Color("AccentColor")) //adjusting the accent color for the entire view:
         //https://www.hackingwithswift.com/quick-start/swiftui/how-to-adjust-the-accent-color-of-a-view
     }
@@ -128,6 +128,13 @@ struct PrimaryView: View {
                 destination: GridsDemo(),
                 label: {
                     NavItem("Grids", "square.grid.4x3.fill")
+                }
+            )
+            
+            NavigationLink(
+                destination: ResourceBundleDemo(),
+                label: {
+                    NavItem("Resource Bundle", "folder")
                 }
             )
             

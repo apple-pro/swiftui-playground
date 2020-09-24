@@ -7,23 +7,44 @@
 
 import SwiftUI
 
+extension Animation: Hashable {
+    
+    public func hash(into hasher: inout Hasher) {
+        hasher.combine(1)
+    }
+}
+
 struct SimpleAnimationDemo: View {
     
+    @State var animationType: Animation = Animation.default
     @State var animationAmount: CGFloat = 1
     
     var body: some View {
-        Button("Test") {
-            if animationAmount < 2 {
-                animationAmount += 4
-            } else {
-                animationAmount = 1
-            }
+        VStack {
+            VStack {
+                Button("Test") {
+                    if animationAmount < 2 {
+                        animationAmount += 4
+                    } else {
+                        animationAmount = 1
+                    }
+                    
+                }.padding()
+                .background(Color.red)
+                .foregroundColor(.white)
+                .clipShape(/*@START_MENU_TOKEN@*/Circle()/*@END_MENU_TOKEN@*/)
+                .scaleEffect(animationAmount)
+                .animation(animationType)
+                
+            }.frame(maxWidth: .infinity, maxHeight: .infinity)
             
-        }.padding()
-        .background(Color.red)
-        .foregroundColor(.white)
-        .clipShape(/*@START_MENU_TOKEN@*/Circle()/*@END_MENU_TOKEN@*/)
-        .scaleEffect(animationAmount).animation(.default)
+            Picker("Gender Identity", selection: $animationType) {
+                Text("Default").tag(Animation.default)
+                Text("Spring").tag(Animation.interpolatingSpring(stiffness: 50, damping: 1))
+            }
+            .pickerStyle(SegmentedPickerStyle())
+        }
+        
     }
 }
 
