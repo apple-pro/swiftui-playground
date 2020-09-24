@@ -14,7 +14,9 @@ struct TransitionDemo: View {
     var body: some View {
         VStack {
             Button(isHidden ? "Show" : "Hide") {
-                isHidden.toggle()
+                withAnimation {
+                    isHidden.toggle()
+                }
             }
             
             if !isHidden {
