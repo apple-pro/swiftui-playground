@@ -9,23 +9,26 @@ import SwiftUI
 
 struct ResourceBundleDemo: View {
     
-    private var commonPasswords = [String]()
-    
+    @State private var commonPasswords = ["password", "secret"]
     @State private var password: String = ""
-    @State private var isCommon = true
+    
+    private var isCommon: Bool {
+        commonPasswords.contains(password)
+    }
     
     var body: some View {
         VStack {
             List {
-                Text("Test")
-                Text("Test")
-                Text("Test")
+                ForEach(commonPasswords, id: \.self) {
+                    Text($0)
+                }
             }.listStyle(InsetListStyle())
             
             VStack {
                 TextField("Your password...", text: $password)
+                    .autocapitalization(.none)
                     .frame(maxWidth: 300)
-                    .foregroundColor(.white)
+                    .foregroundColor(isCommon ? .red : .green)
             }
             .frame(maxWidth: 300)
             .padding()
@@ -44,13 +47,17 @@ struct ResourceBundleDemo: View {
     //refer to this awesome guide:
     //https://www.hackingwithswift.com/books/ios-swiftui/running-code-when-our-app-launches
     func loadDataFromBundle() {
-        if let wordsURL = Bundle.main.url(forResource: "Resources/common-passwordstxt", withExtension: "txt") {
+        if let wordsURL = Bundle.main.url(forResource: "common-passwords", withExtension: "txt") {
             print("URL Worked")
             
-            
-        } else {
-            print("URL Failed")
+            if let badWords = try? String(contentsOf: wordsURL) {
+                commonPasswords = badWords.components(separatedBy: "\n")
+                
+                print("Words Loaded")
+                return
+            }
         }
+        print("Faile to Load Words!")
     }
 }
 
