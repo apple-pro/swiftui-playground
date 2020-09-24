@@ -12,6 +12,7 @@ struct ResourceBundleDemo: View {
     private var commonPasswords = [String]()
     
     @State private var password: String = ""
+    @State private var isCommon = true
     
     var body: some View {
         VStack {
@@ -21,11 +22,18 @@ struct ResourceBundleDemo: View {
                 Text("Test")
             }.listStyle(InsetListStyle())
             
-            TextField("Your password...", text: $password)
-                .frame(maxWidth: 300)
-                .background(Color.gray.opacity(0.5))
-                .foregroundColor(.white)
-            
+            VStack {
+                TextField("Your password...", text: $password)
+                    .frame(maxWidth: 300)
+                    .foregroundColor(.white)
+            }
+            .frame(maxWidth: 300)
+            .padding()
+            .background(Color.white)
+            .clipShape(Capsule())
+            .padding()
+            .background(isCommon ? Color.red : Color.green)
+            .clipShape(Capsule())
             
         }
         .padding()
@@ -34,7 +42,13 @@ struct ResourceBundleDemo: View {
     }
     
     func loadDataFromBundle() {
-        
+        if let wordsURL = Bundle.main.url(forResource: "Resources/common-passwordstxt", withExtension: "txt") {
+            print("URL Worked")
+            
+            
+        } else {
+            print("URL Failed")
+        }
     }
 }
 
