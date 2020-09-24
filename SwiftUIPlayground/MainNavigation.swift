@@ -16,7 +16,7 @@ struct MainNavigation: View {
                 
                 })
             PrimaryView().navigationBarTitle("Primary Content")
-            ExplicitAnimationDemo()
+            AnimatedGesture()
         }.accentColor(Color("AccentColor")) //adjusting the accent color for the entire view:
         //https://www.hackingwithswift.com/quick-start/swiftui/how-to-adjust-the-accent-color-of-a-view
     }
@@ -64,6 +64,15 @@ struct SideBarView: View {
                         HStack {
                             Image(systemName: "play.circle")
                             Text("Explicit Animation")
+                        }
+                })
+                
+                NavigationLink(
+                    destination: AnimatedGesture(),
+                    label: {
+                        HStack {
+                            Image(systemName: "hand.draw")
+                            Text("Gesture + Animation")
                         }
                 })
             }
