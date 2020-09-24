@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+//transition: animation when showing hiding views
 struct TransitionDemo: View {
     
     @State var isHidden = false
@@ -23,7 +24,11 @@ struct TransitionDemo: View {
                 Rectangle()
                     .fill(Color.orange)
                     .frame(width: 200, height: 200)
-                    .transition(.scale)
+                    //transition is same for both events
+                    //.transition(.scale)
+                    
+                    //transition is targetted for the types of events
+                    .transition(.asymmetric(insertion: .scale, removal: .opacity))
             }
             
         }
