@@ -23,6 +23,7 @@ struct TransitionDemo: View {
                 Rectangle()
                     .fill(Color.orange)
                     .frame(width: 200, height: 200)
+                    .transition(.scale)
             }
             
         }
