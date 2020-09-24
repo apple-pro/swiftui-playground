@@ -25,6 +25,9 @@ struct AnimatedGesture: View {
                     .onChanged { self.dragAmount = $0.translation }
                     .onEnded { _ in self.dragAmount = .zero }
             )
+            
+            //some extra animation for a smoother drag
+            .animation(.spring())
     }
 }
 
