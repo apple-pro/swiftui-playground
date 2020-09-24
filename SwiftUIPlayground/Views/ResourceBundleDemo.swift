@@ -41,6 +41,8 @@ struct ResourceBundleDemo: View {
         .onAppear(perform: loadDataFromBundle)
     }
     
+    //refer to this awesome guide:
+    //https://www.hackingwithswift.com/books/ios-swiftui/running-code-when-our-app-launches
     func loadDataFromBundle() {
         if let wordsURL = Bundle.main.url(forResource: "Resources/common-passwordstxt", withExtension: "txt") {
             print("URL Worked")
