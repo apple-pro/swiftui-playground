@@ -22,6 +22,7 @@
 		F0D1D8772519E946002E83EC /* ButtonsDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D1D8762519E946002E83EC /* ButtonsDemo.swift */; };
 		F0D1D87A251A084E002E83EC /* TrimDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D1D879251A084E002E83EC /* TrimDemo.swift */; };
 		F0D1D87D251A09E5002E83EC /* AlertDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D1D87C251A09E5002E83EC /* AlertDemo.swift */; };
+		F0E35DBA251DC9AD00A51B01 /* ImageDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0E35DB9251DC9AD00A51B01 /* ImageDemo.swift */; };
 		F0F0D3DB2516E27E00CD3F1B /* GridsDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F0D3DA2516E27E00CD3F1B /* GridsDemo.swift */; };
 		F0F0D3DF2516E9C900CD3F1B /* MapsDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F0D3DE2516E9C900CD3F1B /* MapsDemo.swift */; };
 		F0F0D3E22516EC8700CD3F1B /* TabDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F0D3E12516EC8700CD3F1B /* TabDemo.swift */; };
@@ -48,6 +49,7 @@
 		F0D1D8762519E946002E83EC /* ButtonsDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonsDemo.swift; sourceTree = "<group>"; };
 		F0D1D879251A084E002E83EC /* TrimDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrimDemo.swift; sourceTree = "<group>"; };
 		F0D1D87C251A09E5002E83EC /* AlertDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertDemo.swift; sourceTree = "<group>"; };
+		F0E35DB9251DC9AD00A51B01 /* ImageDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDemo.swift; sourceTree = "<group>"; };
 		F0F0D3DA2516E27E00CD3F1B /* GridsDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridsDemo.swift; sourceTree = "<group>"; };
 		F0F0D3DE2516E9C900CD3F1B /* MapsDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapsDemo.swift; sourceTree = "<group>"; };
 		F0F0D3E12516EC8700CD3F1B /* TabDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabDemo.swift; sourceTree = "<group>"; };
@@ -100,6 +102,7 @@
 				F087107A251CA91900836530 /* AnimatedGesture.swift */,
 				F087107D251CAD3E00836530 /* TransitionDemo.swift */,
 				F0871080251CB86000836530 /* DeleteFromListDemo.swift */,
+				F0E35DB9251DC9AD00A51B01 /* ImageDemo.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -223,6 +226,7 @@
 				F0FB935725134BB400948A5F /* SimpleAnimationDemo.swift in Sources */,
 				F0FB935525134BB400948A5F /* SwiftUIPlaygroundApp.swift in Sources */,
 				F0F0D3E22516EC8700CD3F1B /* TabDemo.swift in Sources */,
+				F0E35DBA251DC9AD00A51B01 /* ImageDemo.swift in Sources */,
 				F010BE98251B2812009A152F /* ListDemo.swift in Sources */,
 				F089A831251C09F70047A793 /* ResourceBundleDemo.swift in Sources */,
 				F087107B251CA91900836530 /* AnimatedGesture.swift in Sources */,
