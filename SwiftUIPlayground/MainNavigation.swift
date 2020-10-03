@@ -50,6 +50,11 @@ struct SideBarView: View {
                 )
                 
                 NavigationLink(
+                    destination: AdvancedGeometryEffect(),
+                    label: { NavItem("Geometry Effect V2", "wand.and.rays")}
+                )
+                
+                NavigationLink(
                     destination: AnimationEaseOut(),
                     label: {
                         HStack {

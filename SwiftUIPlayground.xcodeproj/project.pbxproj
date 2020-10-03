@@ -12,6 +12,7 @@
 		F011DA6F2518D06300A66EAF /* GeometryEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = F011DA6E2518D06300A66EAF /* GeometryEffect.swift */; };
 		F011DA722518DE4200A66EAF /* FormDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F011DA712518DE4200A66EAF /* FormDemo.swift */; };
 		F019003A2517198F001CAB15 /* AnimationEaseOut.swift in Sources */ = {isa = PBXBuildFile; fileRef = F01900392517198F001CAB15 /* AnimationEaseOut.swift */; };
+		F05A80D52527F2410042DF6C /* AdvancedGeometryEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = F05A80D42527F2410042DF6C /* AdvancedGeometryEffect.swift */; };
 		F0871078251C933700836530 /* ExplicitAnimationDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0871077251C933700836530 /* ExplicitAnimationDemo.swift */; };
 		F087107B251CA91900836530 /* AnimatedGesture.swift in Sources */ = {isa = PBXBuildFile; fileRef = F087107A251CA91900836530 /* AnimatedGesture.swift */; };
 		F087107E251CAD3E00836530 /* TransitionDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F087107D251CAD3E00836530 /* TransitionDemo.swift */; };
@@ -39,6 +40,7 @@
 		F011DA6E2518D06300A66EAF /* GeometryEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeometryEffect.swift; sourceTree = "<group>"; };
 		F011DA712518DE4200A66EAF /* FormDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormDemo.swift; sourceTree = "<group>"; };
 		F01900392517198F001CAB15 /* AnimationEaseOut.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationEaseOut.swift; sourceTree = "<group>"; };
+		F05A80D42527F2410042DF6C /* AdvancedGeometryEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvancedGeometryEffect.swift; sourceTree = "<group>"; };
 		F0871077251C933700836530 /* ExplicitAnimationDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExplicitAnimationDemo.swift; sourceTree = "<group>"; };
 		F087107A251CA91900836530 /* AnimatedGesture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedGesture.swift; sourceTree = "<group>"; };
 		F087107D251CAD3E00836530 /* TransitionDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitionDemo.swift; sourceTree = "<group>"; };
@@ -89,7 +91,6 @@
 				F0FB935625134BB400948A5F /* SimpleAnimationDemo.swift */,
 				F0F0D3E12516EC8700CD3F1B /* TabDemo.swift */,
 				F01900392517198F001CAB15 /* AnimationEaseOut.swift */,
-				F011DA6E2518D06300A66EAF /* GeometryEffect.swift */,
 				F011DA712518DE4200A66EAF /* FormDemo.swift */,
 				F00393FC251989BD006B4300 /* VStackDemo.swift */,
 				F0D1D8732519E5DC002E83EC /* GradientDemo.swift */,
@@ -103,6 +104,8 @@
 				F087107D251CAD3E00836530 /* TransitionDemo.swift */,
 				F0871080251CB86000836530 /* DeleteFromListDemo.swift */,
 				F0E35DB9251DC9AD00A51B01 /* ImageDemo.swift */,
+				F011DA6E2518D06300A66EAF /* GeometryEffect.swift */,
+				F05A80D42527F2410042DF6C /* AdvancedGeometryEffect.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -219,6 +222,7 @@
 				F00393FD251989BD006B4300 /* VStackDemo.swift in Sources */,
 				F0D1D87A251A084E002E83EC /* TrimDemo.swift in Sources */,
 				F0871081251CB86000836530 /* DeleteFromListDemo.swift in Sources */,
+				F05A80D52527F2410042DF6C /* AdvancedGeometryEffect.swift in Sources */,
 				F011DA6F2518D06300A66EAF /* GeometryEffect.swift in Sources */,
 				F011DA722518DE4200A66EAF /* FormDemo.swift in Sources */,
 				F0D1D8742519E5DD002E83EC /* GradientDemo.swift in Sources */,
