@@ -132,7 +132,12 @@ struct SideBarView: View {
                 
                 NavigationLink(
                     destination: ShapeDemo(),
-                    label: { NavItem("Shape", "rectangle.3.offgrid")}
+                    label: { NavItem("Basic Shape", "rectangle.3.offgrid")}
+                )
+                
+                NavigationLink(
+                    destination: AdvancedShape(),
+                    label: { NavItem("Advanced Shape", "perspective")}
                 )
             }
             
