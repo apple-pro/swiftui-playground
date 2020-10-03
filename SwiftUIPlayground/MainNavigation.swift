@@ -55,6 +55,11 @@ struct SideBarView: View {
                 )
                 
                 NavigationLink(
+                    destination: ListAndGeometryEffect(),
+                    label: { NavItem("Geometry Effect + List", "wand.and.rays")}
+                )
+                
+                NavigationLink(
                     destination: AnimationEaseOut(),
                     label: {
                         HStack {
@@ -103,6 +108,10 @@ struct SideBarView: View {
                     label: { NavItem("Horizontal Stack", "square.stack")}
                 )
                 
+                NavigationLink(
+                    destination: LayoutPriorityDemo(),
+                    label: { NavItem("Layout Priority", "wand.and.rays")}
+                )
             }
             
             Section(header: Text("Colors and Shapes")) {
@@ -171,6 +180,11 @@ struct PrimaryView: View {
                 label: {
                     NavItem("Resource Bundle", "folder")
                 }
+            )
+            
+            NavigationLink(
+                destination: ListAndGeometryEffect(),
+                label: { NavItem("Geometry Effect + List", "wand.and.rays")}
             )
             
         }
