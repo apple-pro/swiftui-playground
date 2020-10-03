@@ -129,6 +129,11 @@ struct SideBarView: View {
                     destination: PathDrawingDemo(),
                     label: { NavItem("Path", "pencil.and.outline")}
                 )
+                
+                NavigationLink(
+                    destination: ShapeDemo(),
+                    label: { NavItem("Shape", "rectangle.3.offgrid")}
+                )
             }
             
             Section(header: HStack {
@@ -190,6 +195,11 @@ struct PrimaryView: View {
             NavigationLink(
                 destination: ListAndGeometryEffect(),
                 label: { NavItem("Geometry Effect + List", "wand.and.rays")}
+            )
+            
+            NavigationLink(
+                destination: ShapeDemo(),
+                label: { NavItem("Shape", "rectangle.3.offgrid")}
             )
             
         }
