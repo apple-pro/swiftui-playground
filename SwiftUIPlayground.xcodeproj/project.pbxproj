@@ -15,6 +15,7 @@
 		F05A80D52527F2410042DF6C /* AdvancedGeometryEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = F05A80D42527F2410042DF6C /* AdvancedGeometryEffect.swift */; };
 		F05A80D925280CC40042DF6C /* ListAndGeometryEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = F05A80D825280CC40042DF6C /* ListAndGeometryEffect.swift */; };
 		F05A80DD252825250042DF6C /* LayoutPriorityDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F05A80DC252825250042DF6C /* LayoutPriorityDemo.swift */; };
+		F05A80E0252829E60042DF6C /* PathDrawingDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F05A80DF252829E60042DF6C /* PathDrawingDemo.swift */; };
 		F0871078251C933700836530 /* ExplicitAnimationDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0871077251C933700836530 /* ExplicitAnimationDemo.swift */; };
 		F087107B251CA91900836530 /* AnimatedGesture.swift in Sources */ = {isa = PBXBuildFile; fileRef = F087107A251CA91900836530 /* AnimatedGesture.swift */; };
 		F087107E251CAD3E00836530 /* TransitionDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F087107D251CAD3E00836530 /* TransitionDemo.swift */; };
@@ -45,6 +46,7 @@
 		F05A80D42527F2410042DF6C /* AdvancedGeometryEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvancedGeometryEffect.swift; sourceTree = "<group>"; };
 		F05A80D825280CC40042DF6C /* ListAndGeometryEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListAndGeometryEffect.swift; sourceTree = "<group>"; };
 		F05A80DC252825250042DF6C /* LayoutPriorityDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutPriorityDemo.swift; sourceTree = "<group>"; };
+		F05A80DF252829E60042DF6C /* PathDrawingDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PathDrawingDemo.swift; sourceTree = "<group>"; };
 		F0871077251C933700836530 /* ExplicitAnimationDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExplicitAnimationDemo.swift; sourceTree = "<group>"; };
 		F087107A251CA91900836530 /* AnimatedGesture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedGesture.swift; sourceTree = "<group>"; };
 		F087107D251CAD3E00836530 /* TransitionDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitionDemo.swift; sourceTree = "<group>"; };
@@ -112,6 +114,7 @@
 				F05A80D42527F2410042DF6C /* AdvancedGeometryEffect.swift */,
 				F05A80D825280CC40042DF6C /* ListAndGeometryEffect.swift */,
 				F05A80DC252825250042DF6C /* LayoutPriorityDemo.swift */,
+				F05A80DF252829E60042DF6C /* PathDrawingDemo.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -241,6 +244,7 @@
 				F0E35DBA251DC9AD00A51B01 /* ImageDemo.swift in Sources */,
 				F010BE98251B2812009A152F /* ListDemo.swift in Sources */,
 				F089A831251C09F70047A793 /* ResourceBundleDemo.swift in Sources */,
+				F05A80E0252829E60042DF6C /* PathDrawingDemo.swift in Sources */,
 				F087107B251CA91900836530 /* AnimatedGesture.swift in Sources */,
 				F0F0D3DB2516E27E00CD3F1B /* GridsDemo.swift in Sources */,
 				F0F0D3DF2516E9C900CD3F1B /* MapsDemo.swift in Sources */,

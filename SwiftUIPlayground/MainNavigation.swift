@@ -124,6 +124,11 @@ struct SideBarView: View {
                     destination: TrimDemo(),
                     label: { NavItem("Trim", "scissors")}
                 )
+                
+                NavigationLink(
+                    destination: PathDrawingDemo(),
+                    label: { NavItem("Path", "pencil.and.outline")}
+                )
             }
             
             Section(header: HStack {
