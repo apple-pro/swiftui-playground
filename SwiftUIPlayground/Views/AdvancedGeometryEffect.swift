@@ -14,15 +14,14 @@ struct AdvancedGeometryEffect: View {
     
     var body: some View {
         ZStack {
+            SearchList(showOverlay: $showOverlay, namespace: namespace)
+            
             if showOverlay {
                 SearchOverlay(showOverlay: $showOverlay, namespace: namespace)
-                    .animation(.easeInOut)
-            } else {
-                SearchList(showOverlay: $showOverlay, namespace: namespace)
-                    .animation(.easeInOut)
             }
         }
         .navigationBarHidden(showOverlay)
+        .navigationTitle("Geometry Effect V2")
     }
 }
 
@@ -35,14 +34,16 @@ struct SearchList: View {
     var body: some View {
         VStack {
             
-            TextField("My Text", text: $myText).onTapGesture {
-                withAnimation {
-                    showOverlay.toggle()
+            if !showOverlay {
+                TextField("My Text", text: $myText).onTapGesture {
+                    withAnimation {
+                        showOverlay.toggle()
+                    }
                 }
+                .padding()
+                .border(Color.red, width: 1)
+                .matchedGeometryEffect(id: "Thing", in: namespace)
             }
-            .padding()
-            .border(Color.red, width: 1)
-            .matchedGeometryEffect(id: "Thing", in: namespace)
             
             List {
                 Text("1")
@@ -71,7 +72,9 @@ struct SearchOverlay: View {
                 .matchedGeometryEffect(id: "Thing", in: namespace)
             
             Button("Close") {
-                showOverlay.toggle()
+                withAnimation {
+                    showOverlay.toggle()
+                }
             }
         }
         .edgesIgnoringSafeArea(.all)
