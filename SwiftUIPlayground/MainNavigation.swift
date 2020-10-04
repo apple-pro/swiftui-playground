@@ -159,6 +159,11 @@ struct SideBarView: View {
                 )
                 
                 NavigationLink(
+                    destination: SpirographDemo(),
+                    label: { NavItem("Ultimate Shape", "perspective")}
+                )
+                
+                NavigationLink(
                     destination: MetalPerformanceDGDemo(),
                     label: { NavItem("Drawing Group: Metal Optimization", "paintbrush")}
                 )
