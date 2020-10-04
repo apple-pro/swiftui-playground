@@ -207,6 +207,11 @@ struct PrimaryView: View {
                 label: { NavItem("Shape", "rectangle.3.offgrid")}
             )
             
+            NavigationLink(
+                destination: ImagePaintDemo(),
+                label: { NavItem("Image as Border", "paintbrush")}
+            )
+            
         }
     }
 }
