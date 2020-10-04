@@ -139,6 +139,11 @@ struct SideBarView: View {
                     destination: AdvancedShape(),
                     label: { NavItem("Advanced Shape", "perspective")}
                 )
+                
+                NavigationLink(
+                    destination: MetalPerformanceDGDemo(),
+                    label: { NavItem("Drawing Group: Metal Optimization", "paintbrush")}
+                )
             }
             
             Section(header: HStack {
@@ -210,6 +215,11 @@ struct PrimaryView: View {
             NavigationLink(
                 destination: ImagePaintDemo(),
                 label: { NavItem("Image as Border", "paintbrush")}
+            )
+            
+            NavigationLink(
+                destination: MetalPerformanceDGDemo(),
+                label: { NavItem("Drawing Group: Metal Optimization", "paintbrush")}
             )
             
         }
