@@ -16,6 +16,7 @@
 		F055F1BF2529464800434229 /* ImagePaintDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F055F1BE2529464800434229 /* ImagePaintDemo.swift */; };
 		F055F1C325294AAC00434229 /* MetalPerformanceDGDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F055F1C225294AAC00434229 /* MetalPerformanceDGDemo.swift */; };
 		F055F1C625294F0300434229 /* ColorMultiplyDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F055F1C525294F0300434229 /* ColorMultiplyDemo.swift */; };
+		F055F1C92529508900434229 /* ColorScreenDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F055F1C82529508900434229 /* ColorScreenDemo.swift */; };
 		F05A80D52527F2410042DF6C /* AdvancedGeometryEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = F05A80D42527F2410042DF6C /* AdvancedGeometryEffect.swift */; };
 		F05A80D925280CC40042DF6C /* ListAndGeometryEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = F05A80D825280CC40042DF6C /* ListAndGeometryEffect.swift */; };
 		F05A80DD252825250042DF6C /* LayoutPriorityDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F05A80DC252825250042DF6C /* LayoutPriorityDemo.swift */; };
@@ -52,6 +53,7 @@
 		F055F1BE2529464800434229 /* ImagePaintDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePaintDemo.swift; sourceTree = "<group>"; };
 		F055F1C225294AAC00434229 /* MetalPerformanceDGDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetalPerformanceDGDemo.swift; sourceTree = "<group>"; };
 		F055F1C525294F0300434229 /* ColorMultiplyDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorMultiplyDemo.swift; sourceTree = "<group>"; };
+		F055F1C82529508900434229 /* ColorScreenDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorScreenDemo.swift; sourceTree = "<group>"; };
 		F05A80D42527F2410042DF6C /* AdvancedGeometryEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvancedGeometryEffect.swift; sourceTree = "<group>"; };
 		F05A80D825280CC40042DF6C /* ListAndGeometryEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListAndGeometryEffect.swift; sourceTree = "<group>"; };
 		F05A80DC252825250042DF6C /* LayoutPriorityDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutPriorityDemo.swift; sourceTree = "<group>"; };
@@ -130,6 +132,7 @@
 				F055F1BE2529464800434229 /* ImagePaintDemo.swift */,
 				F055F1C225294AAC00434229 /* MetalPerformanceDGDemo.swift */,
 				F055F1C525294F0300434229 /* ColorMultiplyDemo.swift */,
+				F055F1C82529508900434229 /* ColorScreenDemo.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -243,6 +246,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F0871078251C933700836530 /* ExplicitAnimationDemo.swift in Sources */,
+				F055F1C92529508900434229 /* ColorScreenDemo.swift in Sources */,
 				F00393FD251989BD006B4300 /* VStackDemo.swift in Sources */,
 				F0D1D87A251A084E002E83EC /* TrimDemo.swift in Sources */,
 				F0871081251CB86000836530 /* DeleteFromListDemo.swift in Sources */,

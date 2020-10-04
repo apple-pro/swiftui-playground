@@ -149,6 +149,11 @@ struct SideBarView: View {
                     destination: ColorMultiplyDemo(),
                     label: { NavItem("Color Multiply", "eyedropper.full")}
                 )
+                
+                NavigationLink(
+                    destination: ColorScreenDemo(),
+                    label: { NavItem("Color Screen", "eyedropper.full")}
+                )
             }
             
             Section(header: HStack {
