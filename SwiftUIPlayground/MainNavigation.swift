@@ -144,6 +144,11 @@ struct SideBarView: View {
                     destination: MetalPerformanceDGDemo(),
                     label: { NavItem("Drawing Group: Metal Optimization", "paintbrush")}
                 )
+                
+                NavigationLink(
+                    destination: ColorMultiplyDemo(),
+                    label: { NavItem("Color Multiply", "eyedropper.full")}
+                )
             }
             
             Section(header: HStack {

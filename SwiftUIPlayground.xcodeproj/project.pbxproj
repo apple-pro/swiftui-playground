@@ -15,6 +15,7 @@
 		F055F1BC252942E300434229 /* AdvancedShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = F055F1BB252942E300434229 /* AdvancedShape.swift */; };
 		F055F1BF2529464800434229 /* ImagePaintDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F055F1BE2529464800434229 /* ImagePaintDemo.swift */; };
 		F055F1C325294AAC00434229 /* MetalPerformanceDGDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F055F1C225294AAC00434229 /* MetalPerformanceDGDemo.swift */; };
+		F055F1C625294F0300434229 /* ColorMultiplyDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F055F1C525294F0300434229 /* ColorMultiplyDemo.swift */; };
 		F05A80D52527F2410042DF6C /* AdvancedGeometryEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = F05A80D42527F2410042DF6C /* AdvancedGeometryEffect.swift */; };
 		F05A80D925280CC40042DF6C /* ListAndGeometryEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = F05A80D825280CC40042DF6C /* ListAndGeometryEffect.swift */; };
 		F05A80DD252825250042DF6C /* LayoutPriorityDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F05A80DC252825250042DF6C /* LayoutPriorityDemo.swift */; };
@@ -50,6 +51,7 @@
 		F055F1BB252942E300434229 /* AdvancedShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvancedShape.swift; sourceTree = "<group>"; };
 		F055F1BE2529464800434229 /* ImagePaintDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePaintDemo.swift; sourceTree = "<group>"; };
 		F055F1C225294AAC00434229 /* MetalPerformanceDGDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetalPerformanceDGDemo.swift; sourceTree = "<group>"; };
+		F055F1C525294F0300434229 /* ColorMultiplyDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorMultiplyDemo.swift; sourceTree = "<group>"; };
 		F05A80D42527F2410042DF6C /* AdvancedGeometryEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvancedGeometryEffect.swift; sourceTree = "<group>"; };
 		F05A80D825280CC40042DF6C /* ListAndGeometryEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListAndGeometryEffect.swift; sourceTree = "<group>"; };
 		F05A80DC252825250042DF6C /* LayoutPriorityDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutPriorityDemo.swift; sourceTree = "<group>"; };
@@ -127,6 +129,7 @@
 				F055F1BB252942E300434229 /* AdvancedShape.swift */,
 				F055F1BE2529464800434229 /* ImagePaintDemo.swift */,
 				F055F1C225294AAC00434229 /* MetalPerformanceDGDemo.swift */,
+				F055F1C525294F0300434229 /* ColorMultiplyDemo.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -259,6 +262,7 @@
 				F0E35DBA251DC9AD00A51B01 /* ImageDemo.swift in Sources */,
 				F010BE98251B2812009A152F /* ListDemo.swift in Sources */,
 				F089A831251C09F70047A793 /* ResourceBundleDemo.swift in Sources */,
+				F055F1C625294F0300434229 /* ColorMultiplyDemo.swift in Sources */,
 				F05A80E0252829E60042DF6C /* PathDrawingDemo.swift in Sources */,
 				F087107B251CA91900836530 /* AnimatedGesture.swift in Sources */,
 				F0F0D3DB2516E27E00CD3F1B /* GridsDemo.swift in Sources */,
