@@ -85,6 +85,15 @@ struct SideBarView: View {
                             Text("Gesture + Animation")
                         }
                 })
+                
+                NavigationLink(
+                    destination: AnimatableDataDemo(),
+                    label: {
+                        HStack {
+                            Image(systemName: "crop.rotate")
+                            Text("Animatable Data")
+                        }
+                })
             }
             
             Section(header: Text("Layouts")) {
