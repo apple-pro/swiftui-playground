@@ -94,6 +94,15 @@ struct SideBarView: View {
                             Text("Animatable Data")
                         }
                 })
+                
+                NavigationLink(
+                    destination: AnimatablePairDemo(),
+                    label: {
+                        HStack {
+                            Image(systemName: "crop.rotate")
+                            Text("Animatable Pair")
+                        }
+                })
             }
             
             Section(header: Text("Layouts")) {

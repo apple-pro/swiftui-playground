@@ -29,6 +29,7 @@
 		F0871081251CB86000836530 /* DeleteFromListDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0871080251CB86000836530 /* DeleteFromListDemo.swift */; };
 		F089A82E251C09DB0047A793 /* common-passwords.txt in Resources */ = {isa = PBXBuildFile; fileRef = F089A82D251C09DA0047A793 /* common-passwords.txt */; };
 		F089A831251C09F70047A793 /* ResourceBundleDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F089A830251C09F70047A793 /* ResourceBundleDemo.swift */; };
+		F0A9762B2529992E00787254 /* AnimatablePairDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0A9762A2529992E00787254 /* AnimatablePairDemo.swift */; };
 		F0D1D8742519E5DD002E83EC /* GradientDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D1D8732519E5DC002E83EC /* GradientDemo.swift */; };
 		F0D1D8772519E946002E83EC /* ButtonsDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D1D8762519E946002E83EC /* ButtonsDemo.swift */; };
 		F0D1D87A251A084E002E83EC /* TrimDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D1D879251A084E002E83EC /* TrimDemo.swift */; };
@@ -67,6 +68,7 @@
 		F0871080251CB86000836530 /* DeleteFromListDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteFromListDemo.swift; sourceTree = "<group>"; };
 		F089A82D251C09DA0047A793 /* common-passwords.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "common-passwords.txt"; sourceTree = "<group>"; };
 		F089A830251C09F70047A793 /* ResourceBundleDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourceBundleDemo.swift; sourceTree = "<group>"; };
+		F0A9762A2529992E00787254 /* AnimatablePairDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatablePairDemo.swift; sourceTree = "<group>"; };
 		F0D1D8732519E5DC002E83EC /* GradientDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientDemo.swift; sourceTree = "<group>"; };
 		F0D1D8762519E946002E83EC /* ButtonsDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonsDemo.swift; sourceTree = "<group>"; };
 		F0D1D879251A084E002E83EC /* TrimDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrimDemo.swift; sourceTree = "<group>"; };
@@ -136,6 +138,7 @@
 				F055F1C525294F0300434229 /* ColorMultiplyDemo.swift */,
 				F055F1C82529508900434229 /* ColorScreenDemo.swift */,
 				F055F1CB2529527400434229 /* AnimatableDataDemo.swift */,
+				F0A9762A2529992E00787254 /* AnimatablePairDemo.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -266,6 +269,7 @@
 				F0FB935525134BB400948A5F /* SwiftUIPlaygroundApp.swift in Sources */,
 				F055F1BF2529464800434229 /* ImagePaintDemo.swift in Sources */,
 				F0F0D3E22516EC8700CD3F1B /* TabDemo.swift in Sources */,
+				F0A9762B2529992E00787254 /* AnimatablePairDemo.swift in Sources */,
 				F0E35DBA251DC9AD00A51B01 /* ImageDemo.swift in Sources */,
 				F010BE98251B2812009A152F /* ListDemo.swift in Sources */,
 				F089A831251C09F70047A793 /* ResourceBundleDemo.swift in Sources */,
